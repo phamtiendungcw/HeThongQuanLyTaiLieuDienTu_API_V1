@@ -1,0 +1,192 @@
+[
+  {
+    "UserName": "phamtiendung_admin",
+    "GioiTinh": true,
+    "Email": "phamtiendung@gmail.com",
+    "Phone": "0337198586",
+    "DiaChi": "Phủ Lý, Hà Nam",
+    "HoVaTen": "Phạm Tiến Dũng",
+    "NgayThangNamSinh": "2000-01-09",
+    "SoCMND": "05200002552",
+    "NgayCapCMND": "2018-11-21",
+    "NgayKhoiTao": "2023-04-16",
+    "NgayTruyCap": "2022-04-10",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/men6.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "UserName": "nhunguyen_nv",
+    "GioiTinh": false,
+    "Email": "nhunguyen@bostonic.com",
+    "Phone": "+84 (936) 472-3004",
+    "DiaChi": "260 Herkimer Place, Coultervillle, Kentucky, 8226",
+    "HoVaTen": "Nguyễn Ngọc Như",
+    "NgayThangNamSinh": "1997-05-29",
+    "SoCMND": "03256666859",
+    "NgayCapCMND": "2002-12-20",
+    "NgayKhoiTao": "2022-02-21",
+    "NgayTruyCap": "2022-10-25",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women15.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "UserName": "Puckett",
+    "GioiTinh": true,
+    "Email": "puckettacevedo@bostonic.com",
+    "Phone": "+84 (853) 487-2359",
+    "DiaChi": "232 Broome Street, Chestnut, West Virginia, 4270",
+    "HoVaTen": "Doreen Schultz",
+    "NgayThangNamSinh": "2001-12-08",
+    "SoCMND": "23658968889",
+    "NgayCapCMND": "2002-05-08",
+    "NgayKhoiTao": "2023-03-17",
+    "NgayTruyCap": "2022-02-05",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/men62.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "UserName": "Thomas",
+    "GioiTinh": true,
+    "Email": "thomasschultz@bostonic.com",
+    "Phone": "+84 (994) 441-3375",
+    "DiaChi": "902 Gunnison Court, Walland, Guam, 1950",
+    "HoVaTen": "Hurley Marquez",
+    "NgayThangNamSinh": "1994-01-02",
+    "SoCMND": "23658965452",
+    "NgayCapCMND": "2002-04-15",
+    "NgayKhoiTao": "2023-05-28",
+    "NgayTruyCap": "2022-02-11",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/men43.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "UserName": "Levine",
+    "GioiTinh": true,
+    "Email": "levinemarquez@bostonic.com",
+    "Phone": "+84 (952) 489-2082",
+    "DiaChi": "334 Amboy Street, Robinette, Vermont, 384",
+    "HoVaTen": "Angel Duran",
+    "NgayThangNamSinh": "1996-09-05",
+    "SoCMND": "25632564752",
+    "NgayCapCMND": "2001-01-08",
+    "NgayKhoiTao": "2022-11-23",
+    "NgayTruyCap": "2022-05-05",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/men82.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "UserName": "Chrystal",
+    "GioiTinh": true,
+    "Email": "chrystalduran@bostonic.com",
+    "Phone": "+84 (857) 586-2175",
+    "DiaChi": "880 Dikeman Street, Woodruff, Iowa, 2612",
+    "HoVaTen": "Carlene Greer",
+    "NgayThangNamSinh": "2002-10-04",
+    "SoCMND": "56325652189",
+    "NgayCapCMND": "2000-04-17",
+    "NgayKhoiTao": "2022-03-20",
+    "NgayTruyCap": "2023-02-10",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women4.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "UserName": "Desiree",
+    "GioiTinh": true,
+    "Email": "desireegreer@bostonic.com",
+    "Phone": "+84 (975) 517-2428",
+    "DiaChi": "712 Kingsway Place, Lacomb, Rhode Island, 636",
+    "HoVaTen": "Serrano Valdez",
+    "NgayThangNamSinh": "1998-08-28",
+    "SoCMND": "63256852696",
+    "NgayCapCMND": "2000-06-11",
+    "NgayKhoiTao": "2022-02-03",
+    "NgayTruyCap": "2023-02-16",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women18.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "UserName": "Aileen",
+    "GioiTinh": true,
+    "Email": "aileenvaldez@bostonic.com",
+    "Phone": "+84 (801) 557-3988",
+    "DiaChi": "589 Highland Boulevard, Ogema, American Samoa, 3371",
+    "HoVaTen": "Melisa Gonzales",
+    "NgayThangNamSinh": "1998-12-01",
+    "SoCMND": "56632568456",
+    "NgayCapCMND": "2001-12-27",
+    "NgayKhoiTao": "2023-01-03",
+    "NgayTruyCap": "2022-07-17",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women29.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "UserName": "Susana",
+    "GioiTinh": true,
+    "Email": "susanagonzales@bostonic.com",
+    "Phone": "+84 (869) 462-3128",
+    "DiaChi": "187 Revere Place, Detroit, New York, 1472",
+    "HoVaTen": "Best Russell",
+    "NgayThangNamSinh": "2000-03-30",
+    "SoCMND": "56325214452",
+    "NgayCapCMND": "2002-05-11",
+    "NgayKhoiTao": "2023-05-09",
+    "NgayTruyCap": "2022-03-17",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women23.jpg",
+        "IsMain": true
+      }
+    ]
+  },
+  {
+    "UserName": "Rowena",
+    "GioiTinh": true,
+    "Email": "rowenarussell@bostonic.com",
+    "Phone": "+84 (928) 428-2080",
+    "DiaChi": "411 Lake Place, Dixonville, Marshall Islands, 5898",
+    "HoVaTen": "Lowery Gates",
+    "NgayThangNamSinh": "1995-05-10",
+    "SoCMND": "66985632568",
+    "NgayCapCMND": "2001-03-19",
+    "NgayKhoiTao": "2022-06-05",
+    "NgayTruyCap": "2023-01-10",
+    "Photos": [
+      {
+        "Url": "https://randomuser.me/api/portraits/women31.jpg",
+        "IsMain": true
+      }
+    ]
+  }
+]
