@@ -101,7 +101,7 @@
   },
   {
     "UserName": "Chrystal",
-    "GioiTinh": true,
+    "GioiTinh": false,
     "Email": "chrystalduran@bostonic.com",
     "Phone": "+84 (857) 586-2175",
     "DiaChi": "880 Dikeman Street, Woodruff, Iowa, 2612",
@@ -121,7 +121,7 @@
   },
   {
     "UserName": "Desiree",
-    "GioiTinh": true,
+    "GioiTinh": false,
     "Email": "desireegreer@bostonic.com",
     "Phone": "+84 (975) 517-2428",
     "DiaChi": "712 Kingsway Place, Lacomb, Rhode Island, 636",
@@ -141,7 +141,7 @@
   },
   {
     "UserName": "Aileen",
-    "GioiTinh": true,
+    "GioiTinh": false,
     "Email": "aileenvaldez@bostonic.com",
     "Phone": "+84 (801) 557-3988",
     "DiaChi": "589 Highland Boulevard, Ogema, American Samoa, 3371",
@@ -161,7 +161,7 @@
   },
   {
     "UserName": "Susana",
-    "GioiTinh": true,
+    "GioiTinh": false,
     "Email": "susanagonzales@bostonic.com",
     "Phone": "+84 (869) 462-3128",
     "DiaChi": "187 Revere Place, Detroit, New York, 1472",
@@ -181,7 +181,7 @@
   },
   {
     "UserName": "Rowena",
-    "GioiTinh": true,
+    "GioiTinh": false,
     "Email": "rowenarussell@bostonic.com",
     "Phone": "+84 (928) 428-2080",
     "DiaChi": "411 Lake Place, Dixonville, Marshall Islands, 5898",
