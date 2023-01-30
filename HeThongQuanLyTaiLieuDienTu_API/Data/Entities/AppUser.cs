@@ -13,6 +13,7 @@
         public string DiaChi { get; set; }
         public bool GioiTinh { get; set; }
         public string SoCMND { get; set; }
+        public string NoiCapCMND { get; set; }
         public DateTime NgayCapCMND { get; set; }
         public DateTime NgayKhoiTao { get; set; } = DateTime.Now;
         public DateTime NgayTruyCap { get; set; } = DateTime.Now;
