@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace HeThongQuanLyTaiLieuDienTu_API.Data.DTOs
 {
@@ -30,5 +31,7 @@ namespace HeThongQuanLyTaiLieuDienTu_API.Data.DTOs
         public string NoiCapCMND { get; set; }
 
         public DateTime NgayCapCMND { get; set; }
+
+        [NotMapped] public bool IsRememberMe { get; set; }
     }
 }

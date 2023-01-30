@@ -43,7 +43,7 @@ namespace HeThongQuanLyTaiLieuDienTu_API.Controllers
             return new UserDto
             {
                 Username = user.UserName,
-                Token = _tokenService.CreateToken(user),
+                Token = _tokenService.CreateToken(user, loginDto.IsRememberMe),
                 Hovaten = user.HoVaTen,
                 PhotoUrl = user.Photos.FirstOrDefault(x => x.IsMain)?.Url
             };
@@ -68,7 +68,7 @@ namespace HeThongQuanLyTaiLieuDienTu_API.Controllers
             return new UserDto
             {
                 Username = user.UserName,
-                Token = _tokenService.CreateToken(user),
+                Token = _tokenService.CreateToken(user, registerDto.IsRememberMe),
                 Hovaten = user.HoVaTen
             };
         }
