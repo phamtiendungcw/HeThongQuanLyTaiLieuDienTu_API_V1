@@ -2,6 +2,7 @@
 {
     public class MemberUpdateDto
     {
+        public string UserName { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
         public string HoVaTen { get; set; }
@@ -10,5 +11,6 @@
         public bool GioiTinh { get; set; }
         public string SoCMND { get; set; }
         public DateTime NgayCapCMND { get; set; }
+        public string NoiCapCMND { get; set; }
     }
 }

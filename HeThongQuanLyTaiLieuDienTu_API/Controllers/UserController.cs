@@ -56,10 +56,8 @@ namespace HeThongQuanLyTaiLieuDienTu_API.Controllers
                 var result = await _photoService.DeletePhotoAsync(photo.PublicId);
                 if (result.Error != null) return BadRequest(result.Error.Message);
             }
-
             user.Photos.Remove(photo);
             if (await _userRepository.SaveAllAsync()) return Ok();
-
             return BadRequest("Đã có lỗi xảy ra khi xoá ảnh");
         }
 
@@ -80,12 +78,21 @@ namespace HeThongQuanLyTaiLieuDienTu_API.Controllers
         [HttpPut]
         public async Task<ActionResult> UpdateUser(MemberUpdateDto memberUpdateDto)
         {
-            var user = await _userRepository.GetUserByUsernameAsync(User.GetUsername());
+            var user = await _userRepository.GetUserByUsernameAsync(memberUpdateDto.UserName);
             if (user == null) return NotFound();
             _mapper.Map(memberUpdateDto, user);
             if (await _userRepository.SaveAllAsync()) return NoContent();
-
             return BadRequest("Có lỗi xảy ra khi cập nhật thông tin người dùng");
+        }
+
+        [HttpDelete("{username}")]
+        public async Task<ActionResult<MemberDto>> DeleteUser(string username)
+        {
+            var user = await _userRepository.GetUserByUsernameAsync(username);
+            if (user == null) return BadRequest("Người dùng không tồn tại");
+            _userRepository.Delete(user.Id);
+            if (await _userRepository.SaveAllAsync()) return NoContent();
+            return BadRequest("Đã có lỗi xảy ra khi xoá người dùng");
         }
     }
 }
