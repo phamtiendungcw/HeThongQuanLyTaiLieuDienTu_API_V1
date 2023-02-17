@@ -14,7 +14,7 @@
     "NgayTruyCap": "2022-04-10",
     "Photos": [
       {
-        "Url": "https://randomuser.me/api/portraits/men6.jpg",
+        "Url": "https://randomuser.me/api/portraits/men/6.jpg",
         "IsMain": true
       }
     ]
@@ -34,7 +34,7 @@
     "NgayTruyCap": "2022-10-25",
     "Photos": [
       {
-        "Url": "https://randomuser.me/api/portraits/women15.jpg",
+        "Url": "https://randomuser.me/api/portraits/women/15.jpg",
         "IsMain": true
       }
     ]
@@ -54,7 +54,7 @@
     "NgayTruyCap": "2022-02-05",
     "Photos": [
       {
-        "Url": "https://randomuser.me/api/portraits/men62.jpg",
+        "Url": "https://randomuser.me/api/portraits/men/62.jpg",
         "IsMain": true
       }
     ]
@@ -74,7 +74,7 @@
     "NgayTruyCap": "2022-02-11",
     "Photos": [
       {
-        "Url": "https://randomuser.me/api/portraits/men43.jpg",
+        "Url": "https://randomuser.me/api/portraits/men/43.jpg",
         "IsMain": true
       }
     ]
@@ -94,14 +94,14 @@
     "NgayTruyCap": "2022-05-05",
     "Photos": [
       {
-        "Url": "https://randomuser.me/api/portraits/men82.jpg",
+        "Url": "https://randomuser.me/api/portraits/men/82.jpg",
         "IsMain": true
       }
     ]
   },
   {
     "UserName": "Chrystal",
-    "GioiTinh": true,
+    "GioiTinh": false,
     "Email": "chrystalduran@bostonic.com",
     "Phone": "+84 (857) 586-2175",
     "DiaChi": "880 Dikeman Street, Woodruff, Iowa, 2612",
@@ -114,14 +114,14 @@
     "NgayTruyCap": "2023-02-10",
     "Photos": [
       {
-        "Url": "https://randomuser.me/api/portraits/women4.jpg",
+        "Url": "https://randomuser.me/api/portraits/women/4.jpg",
         "IsMain": true
       }
     ]
   },
   {
     "UserName": "Desiree",
-    "GioiTinh": true,
+    "GioiTinh": false,
     "Email": "desireegreer@bostonic.com",
     "Phone": "+84 (975) 517-2428",
     "DiaChi": "712 Kingsway Place, Lacomb, Rhode Island, 636",
@@ -134,14 +134,14 @@
     "NgayTruyCap": "2023-02-16",
     "Photos": [
       {
-        "Url": "https://randomuser.me/api/portraits/women18.jpg",
+        "Url": "https://randomuser.me/api/portraits/women/18.jpg",
         "IsMain": true
       }
     ]
   },
   {
     "UserName": "Aileen",
-    "GioiTinh": true,
+    "GioiTinh": false,
     "Email": "aileenvaldez@bostonic.com",
     "Phone": "+84 (801) 557-3988",
     "DiaChi": "589 Highland Boulevard, Ogema, American Samoa, 3371",
@@ -154,14 +154,14 @@
     "NgayTruyCap": "2022-07-17",
     "Photos": [
       {
-        "Url": "https://randomuser.me/api/portraits/women29.jpg",
+        "Url": "https://randomuser.me/api/portraits/women/29.jpg",
         "IsMain": true
       }
     ]
   },
   {
     "UserName": "Susana",
-    "GioiTinh": true,
+    "GioiTinh": false,
     "Email": "susanagonzales@bostonic.com",
     "Phone": "+84 (869) 462-3128",
     "DiaChi": "187 Revere Place, Detroit, New York, 1472",
@@ -174,14 +174,14 @@
     "NgayTruyCap": "2022-03-17",
     "Photos": [
       {
-        "Url": "https://randomuser.me/api/portraits/women23.jpg",
+        "Url": "https://randomuser.me/api/portraits/women/23.jpg",
         "IsMain": true
       }
     ]
   },
   {
     "UserName": "Rowena",
-    "GioiTinh": true,
+    "GioiTinh": false,
     "Email": "rowenarussell@bostonic.com",
     "Phone": "+84 (928) 428-2080",
     "DiaChi": "411 Lake Place, Dixonville, Marshall Islands, 5898",
@@ -194,7 +194,7 @@
     "NgayTruyCap": "2023-01-10",
     "Photos": [
       {
-        "Url": "https://randomuser.me/api/portraits/women31.jpg",
+        "Url": "https://randomuser.me/api/portraits/women/31.jpg",
         "IsMain": true
       }
     ]

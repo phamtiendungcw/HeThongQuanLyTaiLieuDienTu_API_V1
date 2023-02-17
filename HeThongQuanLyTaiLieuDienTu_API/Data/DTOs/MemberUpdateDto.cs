@@ -10,5 +10,6 @@
         public bool GioiTinh { get; set; }
         public string SoCMND { get; set; }
         public DateTime NgayCapCMND { get; set; }
+        public string NoiCapCMND { get; set; }
     }
 }

@@ -16,7 +16,7 @@ namespace HeThongQuanLyTaiLieuDienTu_API.Services
             _key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["TokenKey"]));
         }
 
-        public string CreateToken(AppUser user)
+        public string CreateToken(AppUser user, bool isRememberMe)
         {
             var claims = new List<Claim>()
             {
@@ -26,7 +26,7 @@ namespace HeThongQuanLyTaiLieuDienTu_API.Services
             var tokenDescriptor = new SecurityTokenDescriptor()
             {
                 Subject = new ClaimsIdentity(claims),
-                Expires = DateTime.Now.AddDays(7),
+                Expires = isRememberMe ? DateTime.Now.AddDays(7) : DateTime.Now.AddDays(1),
                 SigningCredentials = creds
             };
             var tokenHandler = new JwtSecurityTokenHandler();

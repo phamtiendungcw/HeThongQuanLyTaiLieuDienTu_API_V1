@@ -18,6 +18,12 @@ namespace HeThongQuanLyTaiLieuDienTu_API.Data
             _mapper = mapper;
         }
 
+        public async void Delete(int id)
+        {
+            var user = await GetUserByIdAsync(id);
+            _context.Users.Remove(user);
+        }
+
         public async Task<MemberDto> GetMemberAsync(string username)
         {
             return await _context.Users

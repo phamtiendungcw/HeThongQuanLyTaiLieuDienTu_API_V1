@@ -5,6 +5,8 @@ namespace HeThongQuanLyTaiLieuDienTu_API.Interfaces
 {
     public interface IUserRepository
     {
+        void Delete(int id);
+
         Task<MemberDto> GetMemberAsync(string username);
 
         Task<IEnumerable<MemberDto>> GetMembersAsync();
