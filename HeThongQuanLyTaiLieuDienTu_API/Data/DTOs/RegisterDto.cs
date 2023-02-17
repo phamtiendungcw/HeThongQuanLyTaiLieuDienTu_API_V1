@@ -5,7 +5,7 @@ namespace HeThongQuanLyTaiLieuDienTu_API.Data.DTOs
 {
     public class RegisterDto
     {
-        [Required][MaxLength(50)] public string Username { get; set; }
+        [Required] [MaxLength(50)] public string Username { get; set; }
 
         [Required]
         [StringLength(32, MinimumLength = 8)]

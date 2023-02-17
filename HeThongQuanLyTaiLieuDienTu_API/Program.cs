@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddApplicationServices(builder.Configuration); // Application extensions services
-builder.Services.AddIdentityServices(builder.Configuration);    // Identity extensions services
+builder.Services.AddIdentityServices(builder.Configuration); // Identity extensions services
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
