@@ -105,8 +105,7 @@ namespace HeThongQuanLyTaiLieuDienTu_API.Controllers
         [HttpPut]
         public async Task<ActionResult> UpdateUser(MemberUpdateDto memberUpdateDto)
         {
-            var user = await _userRepository.GetUserByUsernameAsync(User.GetUsername());
-            //var user = await _userRepository.GetUserByUsernameAsync(username);
+            var user = await _userRepository.GetUserByUsernameAsync(memberUpdateDto.Username);
             if (user == null) return NotFound();
             _mapper.Map(memberUpdateDto, user);
             if (await _userRepository.SaveAllAsync()) return NoContent();
