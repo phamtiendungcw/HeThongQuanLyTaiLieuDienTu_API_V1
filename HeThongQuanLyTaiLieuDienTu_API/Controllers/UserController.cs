@@ -62,20 +62,14 @@ namespace HeThongQuanLyTaiLieuDienTu_API.Controllers
             return BadRequest("Đã có lỗi xảy ra khi xoá ảnh");
         }
 
-        [HttpPut("set-main-photo/{photoId}")]
-        public async Task<ActionResult> SetMainPhoto(int photoId)
+        [HttpDelete("{username}")]
+        public async Task<ActionResult<MemberDto>> DeleteUser(string username)
         {
-            var user = await _userRepository.GetUserByUsernameAsync(User.GetUsername());
-            if (user == null) return NotFound();
-            var photo = user.Photos.FirstOrDefault(x => x.Id == photoId);
-            if (photo == null) return NotFound();
-            if (photo.IsMain) return BadRequest("Bạn không thể xoá ảnh đại diện của bạn");
-            var currentMain = user.Photos.FirstOrDefault(x => x.IsMain);
-            if (currentMain != null) currentMain.IsMain = false;
-            photo.IsMain = true;
+            var user = await _userRepository.GetUserByUsernameAsync(username);
+            if (user == null) return BadRequest("Người dùng không tồn tại");
+            _userRepository.Delete(user.Id);
             if (await _userRepository.SaveAllAsync()) return NoContent();
-
-            return BadRequest("Đã có lỗi xảy ra khi đổi ảnh đại diện của bạn");
+            return BadRequest("Đã có lỗi xảy ra khi xoá người dùng");
         }
 
         // GET: Dữ liệu 1 người dùng bằng tên đăng nhập
@@ -92,6 +86,22 @@ namespace HeThongQuanLyTaiLieuDienTu_API.Controllers
             return Ok(await _userRepository.GetMembersAsync());
         }
 
+        [HttpPut("set-main-photo/{photoId}")]
+        public async Task<ActionResult> SetMainPhoto(int photoId)
+        {
+            var user = await _userRepository.GetUserByUsernameAsync(User.GetUsername());
+            if (user == null) return NotFound();
+            var photo = user.Photos.FirstOrDefault(x => x.Id == photoId);
+            if (photo == null) return NotFound();
+            if (photo.IsMain) return BadRequest("Bạn không thể xoá ảnh đại diện của bạn");
+            var currentMain = user.Photos.FirstOrDefault(x => x.IsMain);
+            if (currentMain != null) currentMain.IsMain = false;
+            photo.IsMain = true;
+            if (await _userRepository.SaveAllAsync()) return NoContent();
+
+            return BadRequest("Đã có lỗi xảy ra khi đổi ảnh đại diện của bạn");
+        }
+
         [HttpPut]
         public async Task<ActionResult> UpdateUser(MemberUpdateDto memberUpdateDto)
         {
@@ -101,16 +111,6 @@ namespace HeThongQuanLyTaiLieuDienTu_API.Controllers
             _mapper.Map(memberUpdateDto, user);
             if (await _userRepository.SaveAllAsync()) return NoContent();
             return BadRequest("Có lỗi xảy ra khi cập nhật thông tin người dùng");
-        }
-
-        [HttpDelete("{username}")]
-        public async Task<ActionResult<MemberDto>> DeleteUser(string username)
-        {
-            var user = await _userRepository.GetUserByUsernameAsync(username);
-            if (user == null) return BadRequest("Người dùng không tồn tại");
-            _userRepository.Delete(user.Id);
-            if (await _userRepository.SaveAllAsync()) return NoContent();
-            return BadRequest("Đã có lỗi xảy ra khi xoá người dùng");
         }
     }
 }
