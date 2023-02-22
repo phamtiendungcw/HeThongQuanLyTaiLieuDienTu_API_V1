@@ -13,6 +13,8 @@ namespace HeThongQuanLyTaiLieuDienTu_API.Data
         {
         }
 
+        public DbSet<Document> Documents { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

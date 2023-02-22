@@ -10,6 +10,7 @@ namespace HeThongQuanLyTaiLieuDienTu_API.Extensions
     {
         public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration config)
         {
+            //services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddDbContext<DataContext>(opt =>
             {
                 opt.UseSqlServer(config.GetConnectionString("DefaultConnection"));
