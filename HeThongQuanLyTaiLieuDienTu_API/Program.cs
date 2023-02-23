@@ -1,6 +1,8 @@
 ﻿using HeThongQuanLyTaiLieuDienTu_API.Data;
+using HeThongQuanLyTaiLieuDienTu_API.Data.Entities;
 using HeThongQuanLyTaiLieuDienTu_API.Extensions;
 using HeThongQuanLyTaiLieuDienTu_API.Middleware;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
@@ -45,6 +47,7 @@ var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 app.UseMiddleware<ExceptionMiddleware>();
+//app.UseStaticFiles();
 app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200"));
 if (app.Environment.IsDevelopment())
 {
@@ -64,8 +67,10 @@ var services = scope.ServiceProvider;
 try
 {
     var context = services.GetRequiredService<DataContext>();
+    var userManager = services.GetRequiredService<UserManager<AppUser>>();
+    var roleManager = services.GetRequiredService<RoleManager<AppRole>>();
     await context.Database.MigrateAsync();
-    await Seed.SeedUsers(context);
+    await Seed.SeedUsers(userManager, roleManager);
 }
 catch (Exception ex)
 {

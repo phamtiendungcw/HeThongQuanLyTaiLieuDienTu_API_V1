@@ -4,6 +4,6 @@ namespace HeThongQuanLyTaiLieuDienTu_API.Interfaces
 {
     public interface ITokenService
     {
-        string CreateToken(AppUser user, bool isRememberMe);
+        Task<string> CreateToken(AppUser user, bool isRememberMe);
     }
 }

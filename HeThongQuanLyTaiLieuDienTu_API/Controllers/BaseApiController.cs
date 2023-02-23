@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using HeThongQuanLyTaiLieuDienTu_API.Helpers;
+using Microsoft.AspNetCore.Mvc;
 
 namespace HeThongQuanLyTaiLieuDienTu_API.Controllers
 {
-    [Route("edmslab/api/[controller]")]
     [ApiController]
+    [Route("edmslab/api/[controller]")]
+    [ServiceFilter(typeof(LogUserActivity))]
     public class BaseApiController : ControllerBase
     {
     }
