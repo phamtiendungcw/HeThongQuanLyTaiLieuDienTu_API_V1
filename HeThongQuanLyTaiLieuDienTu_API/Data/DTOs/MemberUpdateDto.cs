@@ -1,7 +1,6 @@
-﻿namespace HeThongQuanLyTaiLieuDienTu_API.Data.DTOs
-{
-    public class MemberUpdateDto
-    {
+﻿namespace HeThongQuanLyTaiLieuDienTu_API.Data.DTOs {
+
+    public class MemberUpdateDto {
         public string Username { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }

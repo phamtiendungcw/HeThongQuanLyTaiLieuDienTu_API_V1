@@ -1,9 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace HeThongQuanLyTaiLieuDienTu_API.Data.Entities
-{
-    public class AppUser : IdentityUser<int>
-    {
+namespace HeThongQuanLyTaiLieuDienTu_API.Data.Entities {
+
+    public class AppUser : IdentityUser<int> {
         public string Phone { get; set; }
         public string HoVaTen { get; set; }
         public DateTime NgayThangNamSinh { get; set; }

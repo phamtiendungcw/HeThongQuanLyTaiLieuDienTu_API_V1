@@ -1,14 +1,12 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace HeThongQuanLyTaiLieuDienTu_API.Data.Migrations
-{
-    public partial class ExtendedUserEntity : Migration
-    {
-        protected override void Up(MigrationBuilder migrationBuilder)
-        {
+namespace HeThongQuanLyTaiLieuDienTu_API.Data.Migrations {
+
+    public partial class ExtendedUserEntity : Migration {
+
+        protected override void Up(MigrationBuilder migrationBuilder) {
             migrationBuilder.AddColumn<string>(
                 name: "DiaChi",
                 table: "Users",
@@ -70,8 +68,7 @@ namespace HeThongQuanLyTaiLieuDienTu_API.Data.Migrations
 
             migrationBuilder.CreateTable(
                 name: "Photos",
-                columns: table => new
-                {
+                columns: table => new {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Url = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -79,8 +76,7 @@ namespace HeThongQuanLyTaiLieuDienTu_API.Data.Migrations
                     PublicId = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     AppUserId = table.Column<int>(type: "int", nullable: false)
                 },
-                constraints: table =>
-                {
+                constraints: table => {
                     table.PrimaryKey("PK_Photos", x => x.Id);
                     table.ForeignKey(
                         name: "FK_Photos_Users_AppUserId",
@@ -96,8 +92,7 @@ namespace HeThongQuanLyTaiLieuDienTu_API.Data.Migrations
                 column: "AppUserId");
         }
 
-        protected override void Down(MigrationBuilder migrationBuilder)
-        {
+        protected override void Down(MigrationBuilder migrationBuilder) {
             migrationBuilder.DropTable(
                 name: "Photos");
 

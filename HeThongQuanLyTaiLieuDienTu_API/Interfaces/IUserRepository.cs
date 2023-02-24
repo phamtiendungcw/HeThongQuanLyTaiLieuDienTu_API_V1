@@ -1,10 +1,10 @@
 ﻿using HeThongQuanLyTaiLieuDienTu_API.Data.DTOs;
 using HeThongQuanLyTaiLieuDienTu_API.Data.Entities;
 
-namespace HeThongQuanLyTaiLieuDienTu_API.Interfaces
-{
-    public interface IUserRepository
-    {
+namespace HeThongQuanLyTaiLieuDienTu_API.Interfaces {
+
+    public interface IUserRepository {
+
         void Delete(int id);
 
         Task<MemberDto> GetMemberAsync(string username);
