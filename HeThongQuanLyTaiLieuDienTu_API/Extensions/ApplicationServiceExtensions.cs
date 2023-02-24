@@ -4,15 +4,13 @@ using HeThongQuanLyTaiLieuDienTu_API.Interfaces;
 using HeThongQuanLyTaiLieuDienTu_API.Services;
 using Microsoft.EntityFrameworkCore;
 
-namespace HeThongQuanLyTaiLieuDienTu_API.Extensions
-{
-    public static class ApplicationServiceExtensions
-    {
-        public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration config)
-        {
+namespace HeThongQuanLyTaiLieuDienTu_API.Extensions {
+
+    public static class ApplicationServiceExtensions {
+
+        public static IServiceCollection AddApplicationServices(this IServiceCollection services, IConfiguration config) {
             //services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-            services.AddDbContext<DataContext>(opt =>
-            {
+            services.AddDbContext<DataContext>(opt => {
                 opt.UseSqlServer(config.GetConnectionString("DefaultConnection"));
             });
             services.AddCors();

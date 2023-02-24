@@ -15,11 +15,9 @@ builder.Services.AddApplicationServices(builder.Configuration); // Application e
 builder.Services.AddIdentityServices(builder.Configuration); // Identity extensions services
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(c =>
-{
+builder.Services.AddSwaggerGen(c => {
     c.SwaggerDoc("v1", new OpenApiInfo() { Title = "Authorization", Version = "v1" });
-    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
-    {
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme() {
         In = ParameterLocation.Header,
         Description = "Hãy nhập token người dùng",
         Name = "Authorization",
@@ -49,8 +47,7 @@ var app = builder.Build();
 app.UseMiddleware<ExceptionMiddleware>();
 //app.UseStaticFiles();
 app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200"));
-if (app.Environment.IsDevelopment())
-{
+if (app.Environment.IsDevelopment()) {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
@@ -64,16 +61,14 @@ app.MapControllers();
 
 using var scope = app.Services.CreateScope();
 var services = scope.ServiceProvider;
-try
-{
+try {
     var context = services.GetRequiredService<DataContext>();
     var userManager = services.GetRequiredService<UserManager<AppUser>>();
     var roleManager = services.GetRequiredService<RoleManager<AppRole>>();
     await context.Database.MigrateAsync();
     await Seed.SeedUsers(userManager, roleManager);
 }
-catch (Exception ex)
-{
+catch (Exception ex) {
     var logger = services.GetService<ILogger<Program>>();
     logger.LogError(ex, "Đã xảy ra lỗi trong quá trình xử lý dữ liệu Seed");
 }

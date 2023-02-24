@@ -1,11 +1,10 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace HeThongQuanLyTaiLieuDienTu_API.Data.DTOs
-{
-    public class RegisterDto
-    {
-        [Required] [MaxLength(50)] public string Username { get; set; }
+namespace HeThongQuanLyTaiLieuDienTu_API.Data.DTOs {
+
+    public class RegisterDto {
+        [Required][MaxLength(50)] public string Username { get; set; }
 
         [Required]
         [StringLength(32, MinimumLength = 8)]
